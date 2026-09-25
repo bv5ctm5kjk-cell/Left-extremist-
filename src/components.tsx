@@ -34,9 +34,12 @@ export const FadeUp: React.FC<{
 export const Kicker: React.FC<{children: React.ReactNode; color?: string}> = ({
   children,
   color = C.linke,
-}) => (
+}) => {
+  const p = useIn(2);
+  return (
   <div
     style={{
+      clipPath: `inset(0 ${(1 - p) * 100}% 0 0)`,
       display: 'inline-block',
       background: color,
       color: '#fff',
@@ -50,7 +53,8 @@ export const Kicker: React.FC<{children: React.ReactNode; color?: string}> = ({
   >
     {children}
   </div>
-);
+  );
+};
 
 export const Headline: React.FC<{children: React.ReactNode; size?: number}> = ({
   children,

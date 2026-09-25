@@ -1,5 +1,6 @@
 import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
 import {CountUp, FadeUp, Headline, Kicker, Source, useIn} from './components';
+import {useShake} from './effects';
 import {C} from './theme';
 
 const Page: React.FC<{children: React.ReactNode}> = ({children}) => (
@@ -152,24 +153,45 @@ const Stat: React.FC<{big: React.ReactNode; label: string; delay: number}> = ({
   big,
   label,
   delay,
-}) => (
+}) => {
+  const frame = useCurrentFrame();
+  const punch = interpolate(frame - delay, [0, 6, 14], [1.35, 0.95, 1], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
+  return (
   <FadeUp delay={delay} style={{marginTop: 50}}>
-    <div style={{fontSize: 150, fontWeight: 900, color: C.accent, lineHeight: 1}}>
+    <div style={{fontSize: 150, fontWeight: 900, color: C.accent, lineHeight: 1, transform: `scale(${punch})`, transformOrigin: 'left center', textShadow: '0 0 40px rgba(245,197,24,0.35)'}}>
       {big}
     </div>
     <div style={{fontSize: 46, color: C.text, marginTop: 8}}>{label}</div>
   </FadeUp>
-);
+  );
+};
 
-export const Begriff: React.FC = () => (
+export const Begriff: React.FC = () => {
+  const frame = useCurrentFrame();
+  const strike = interpolate(frame, [18, 30], [0, 100], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
   <Page>
     <FadeUp>
       <Kicker>Position der Linken</Kicker>
     </FadeUp>
     <FadeUp delay={10}>
       <Headline size={96}>
-        <span style={{textDecoration: `line-through ${C.linke} 10px`}}>
+        <span style={{position: 'relative', display: 'inline-block'}}>
           „Clankriminalität“
+          <span
+            style={{
+              position: 'absolute',
+              left: 0,
+              top: '52%',
+              height: 12,
+              width: `${strike}%`,
+              background: C.linke,
+              transform: 'rotate(-3deg)',
+            }}
+          />
         </span>
       </Headline>
     </FadeUp>
@@ -179,10 +201,15 @@ export const Begriff: React.FC = () => (
       </div>
     </FadeUp>
   </Page>
-);
+  );
+};
 
-export const Kocak: React.FC = () => (
+export const Kocak: React.FC = () => {
+  const shake = useShake(0, 14, 18);
+  const quoteShake = useShake(95, 10, 10);
+  return (
   <Page>
+    <div style={{transform: shake}}>
     <FadeUp>
       <Kicker>Der Fall Koçak</Kicker>
     </FadeUp>
@@ -199,7 +226,7 @@ export const Kocak: React.FC = () => (
         }}
       >
         Chat mit Firas Remmo, Sohn von Clanchef Issa Remmo:
-        <div style={{color: C.accent, fontWeight: 800, fontStyle: 'normal', marginTop: 16}}>
+        <div style={{color: C.accent, fontWeight: 800, fontStyle: 'normal', marginTop: 16, transform: quoteShake, textShadow: '0 0 30px rgba(245,197,24,0.45)'}}>
           „Grüße mit Respekt“
         </div>
       </div>
@@ -216,8 +243,10 @@ export const Kocak: React.FC = () => (
         sich und zieht sich vorerst zurück.
       </div>
     </FadeUp>
+    </div>
   </Page>
-);
+  );
+};
 
 export const Outro: React.FC = () => (
   <Page>
