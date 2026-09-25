@@ -1,5 +1,5 @@
 // Erzeugt einen lizenzfreien Spannungs-Track (120 BPM, a-Moll) als WAV.
-// Aufruf: node scripts/make-music.mjs <sekunden> <ausgabe.wav> [halbtöne]
+// Aufruf: node scripts/make-music.mjs <sekunden> <ausgabe.wav> [halbtöne] [intro-sekunden]
 // Mit <halbtöne> lässt sich der Track transponieren (z. B. 3 = c-Moll).
 // Aufbau: Riser + Snare-Wirbel bis INTRO, dann Drop mit Beat, Bass und Flächen.
 import fs from 'fs';
@@ -8,7 +8,7 @@ const SR = 44100;
 const LEN = Number(process.argv[2] ?? 96);
 const OUT = process.argv[3] ?? 'music.wav';
 const TRANSPOSE = Number(process.argv[4] ?? 0);
-const INTRO = 3; // Sekunden bis zum Drop
+const INTRO = Number(process.argv[5] ?? 3); // Sekunden bis zum Drop
 const BEAT = 0.5; // 120 BPM
 const buf = new Float32Array(Math.ceil(LEN * SR));
 
