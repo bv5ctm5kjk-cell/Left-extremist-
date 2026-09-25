@@ -5,7 +5,7 @@ import {FPS, TOTAL_FRAMES} from './script';
 const defaultProps: BerlinVideoProps = {
   // Eigene Sprachaufnahme als public/voiceover.mp3 ablegen und hier
   // 'voiceover.mp3' eintragen. null = Video ohne Sprecher.
-  voiceover: null,
+  voiceover: 'voiceover.mp3',
   untertitel: true,
 };
 

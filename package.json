@@ -2,7 +2,7 @@
   "name": "berlin-linke-clan-video",
   "version": "1.0.0",
   "private": true,
-  "description": "60-Sekunden-Erklärvideo (Remotion): Die Linke in Berlin, ihre Vorhaben und der Fall Koçak/Remmo",
+  "description": "Kurzes Erklärvideo (Remotion): Die Linke in Berlin, ihre Vorhaben und der Fall Koçak/Remmo",
   "scripts": {
     "dev": "remotion studio",
     "render": "remotion render BerlinVideo out/berlin-video.mp4",

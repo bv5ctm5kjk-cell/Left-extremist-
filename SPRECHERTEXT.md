@@ -1,6 +1,6 @@
 # Sprechertext: „Berlin-Wahl 2026: Die Linke, Clankriminalität und der Fall Koçak“
 
-60 Sekunden, Hochformat 1080×1920 (Reels/TikTok/Shorts). Gesamt ca. 150 Wörter, also ruhiges Sprechtempo.
+Ca. 70 Sekunden, Hochformat 1080×1920 (Reels/TikTok/Shorts). Die eingesprochene Stimme liegt als `public/voiceover.mp3` bei, Pausen sind herausgeschnitten. Die Zeiten unten sind die Planung vor der Aufnahme; das tatsächliche Timing steht in `src/script.ts`.
 
 | Zeit | Szene | Text |
 |---|---|---|
@@ -12,11 +12,11 @@
 | 0:40–0:53 | Fall Koçak | Jetzt steht ihr Bundestagsabgeordneter Ferat Koçak in der Kritik: In einem Chat mit einem Sohn von Clanchef Issa Remmo ließ er „Grüße mit Respekt“ ausrichten. Koçak hat sich entschuldigt und zieht sich vorerst zurück. |
 | 0:53–1:00 | Outro | Die Parteispitze hat ihn kritisiert. Wie die neue Regierung mit Clankriminalität umgeht, wird sich zeigen. |
 
-## Eigene Stimme einsetzen
+## Stimme neu aufnehmen
 
 1. Den Text oben einsprechen, am besten in einem Stück, ruhig und deutlich. Das Handy reicht, wenn du in einem ruhigen Raum aufnimmst.
 2. Die Aufnahme als `public/voiceover.mp3` speichern (WAV oder M4A gehen auch, dann den Namen anpassen).
-3. In `src/Root.tsx` `voiceover: null` durch `voiceover: 'voiceover.mp3'` ersetzen.
+3. Pausen kürzen (optional): `ffmpeg -i aufnahme.m4a -af "silenceremove=start_periods=1:start_threshold=-35dB:stop_periods=-1:stop_duration=0.25:stop_threshold=-35dB:stop_silence=0.15,loudnorm=I=-16:TP=-1.5:LRA=11" public/voiceover.mp3`
 4. Passt das Timing nicht, in `src/script.ts` bei jeder Szene `seconds` anpassen. Die Gesamtlänge ergibt sich automatisch.
 5. Untertitel abschalten: `untertitel: false` in `src/Root.tsx`.
 

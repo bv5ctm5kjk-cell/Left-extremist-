@@ -33,7 +33,7 @@ export const Intro: React.FC = () => {
       />
       <FadeUp delay={20}>
         <div style={{fontSize: 48, color: C.muted, marginTop: 40}}>
-          Pläne, Clankriminalität und der Fall Koçak – in 60 Sekunden.
+          Pläne, Clankriminalität und der Fall Koçak – kurz erklärt.
         </div>
       </FadeUp>
     </Page>
