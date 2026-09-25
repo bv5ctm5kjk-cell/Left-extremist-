@@ -1,19 +1,9 @@
 // Teil 2: „Der Fall Koçak – was seitdem passiert ist“.
 // Jede Einstellung (Shot) hat ihren Untertitel-Text und eine Dauer.
 // Die Dauern entsprechen den Satzpausen in den Aufnahmen (public/teil2/).
-export const FPS = 30;
+import {INTRO_SECONDS, Shot, VoicePart, totalFrames} from '../shorts/types';
 
-// Musik-Intro vor dem ersten gesprochenen Wort.
-export const INTRO_SECONDS = 3;
-
-export type Bg = 'rot' | 'blau' | 'nacht' | 'alarm' | 'spot' | 'gruen' | 'grau';
-
-export type Shot = {
-  id: string;
-  bg: Bg;
-  seconds: number;
-  text: string;
-};
+export {FPS} from '../shorts/types';
 
 export const SHOTS: Shot[] = [
   {id: 'intro', bg: 'alarm', seconds: INTRO_SECONDS, text: ''},
@@ -40,12 +30,11 @@ export const SHOTS: Shot[] = [
 ];
 
 // Sprachaufnahmen: jede startet mit der genannten Einstellung.
-export const VOICE_PARTS: {file: string; firstShot: string}[] = [
+export const VOICE_PARTS: VoicePart[] = [
   {file: 'teil2/stimme-1.mp3', firstShot: 'hook1'},
   {file: 'teil2/stimme-2.mp3', firstShot: 'gespalten'},
   {file: 'teil2/stimme-3.mp3', firstShot: 'bundestag'},
   {file: 'teil2/stimme-4.mp3', firstShot: 'eralp'},
 ];
 
-export const shotFrames = (seconds: number) => Math.round(seconds * FPS);
-export const TOTAL_FRAMES = SHOTS.reduce((sum, s) => sum + shotFrames(s.seconds), 0);
+export const TOTAL_FRAMES = totalFrames(SHOTS);

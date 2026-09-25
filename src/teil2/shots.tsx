@@ -5,7 +5,7 @@ import {C} from '../theme';
 
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
-const Page: React.FC<{children: React.ReactNode; center?: boolean}> = ({children, center}) => (
+export const Page: React.FC<{children: React.ReactNode; center?: boolean}> = ({children, center}) => (
   <AbsoluteFill
     style={{
       padding: '200px 80px 560px',
@@ -18,7 +18,7 @@ const Page: React.FC<{children: React.ReactNode; center?: boolean}> = ({children
   </AbsoluteFill>
 );
 
-const Slam: React.FC<{delay: number; children: React.ReactNode; size?: number; color?: string}> = ({
+export const Slam: React.FC<{delay: number; children: React.ReactNode; size?: number; color?: string}> = ({
   delay,
   children,
   size = 120,
@@ -46,7 +46,7 @@ const Slam: React.FC<{delay: number; children: React.ReactNode; size?: number; c
   );
 };
 
-const Big: React.FC<{children: React.ReactNode; size?: number; color?: string; delay?: number}> = ({
+export const Big: React.FC<{children: React.ReactNode; size?: number; color?: string; delay?: number}> = ({
   children,
   size = 96,
   color = C.text,
@@ -57,7 +57,7 @@ const Big: React.FC<{children: React.ReactNode; size?: number; color?: string; d
   </FadeUp>
 );
 
-const Quote: React.FC<{who: string; role: string; text: string; color?: string; indirekt?: boolean}> = ({
+export const Quote: React.FC<{who: string; role: string; text: string; color?: string; indirekt?: boolean}> = ({
   who,
   role,
   text,
@@ -192,7 +192,7 @@ export const Party: React.FC = () => (
   </Page>
 );
 
-const Tag: React.FC<{color: string; children: React.ReactNode}> = ({color, children}) => (
+export const Tag: React.FC<{color: string; children: React.ReactNode}> = ({color, children}) => (
   <div style={{border: `4px solid ${color}`, color, fontSize: 44, fontWeight: 800, padding: '10px 26px', borderRadius: 60}}>
     {children}
   </div>
@@ -313,7 +313,7 @@ export const Bundestag: React.FC = () => (
   </Page>
 );
 
-const PartyBlock: React.FC<{delay: number; color: string; name: string; value?: string}> = ({delay, color, name, value}) => {
+export const PartyBlock: React.FC<{delay: number; color: string; name: string; value?: string}> = ({delay, color, name, value}) => {
   const p = useIn(delay);
   return (
     <div

@@ -1,6 +1,6 @@
 import {AbsoluteFill, interpolate, random, useCurrentFrame} from 'remotion';
-import type {Bg} from './script';
-import {FPS, INTRO_SECONDS} from './script';
+import type {Bg} from './types';
+import {FPS, INTRO_SECONDS} from './types';
 
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 const BEAT_FRAMES = FPS / 2; // 120 BPM
