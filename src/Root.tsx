@@ -12,8 +12,8 @@ const defaultProps: BerlinVideoProps = {
 };
 
 const teil2Props: KocakTeil2Props = {
-  // Aufnahme als public/voiceover-teil2.mp3 ablegen und hier eintragen.
-  voiceover: null,
+  // Sprachaufnahmen: siehe VOICE_PARTS in src/teil2/script.ts
+  stimme: true,
   musik: 'musik-teil2.mp3',
   untertitel: true,
 };

@@ -2,11 +2,11 @@ import {AbsoluteFill, Audio, Sequence, interpolate, spring, staticFile, useCurre
 import {Grain, ProgressBar} from '../effects';
 import {C, FONT} from '../theme';
 import {Backdrop, Flash, KINDS, ShotFx} from './fx';
-import {FPS, INTRO_SECONDS, SHOTS, TOTAL_FRAMES, shotFrames} from './script';
+import {FPS, INTRO_SECONDS, SHOTS, TOTAL_FRAMES, VOICE_PARTS, shotFrames} from './script';
 import * as S from './shots';
 
 export type KocakTeil2Props = {
-  voiceover: string | null;
+  stimme: boolean;
   musik: string;
   untertitel: boolean;
 };
@@ -40,7 +40,7 @@ const HITS = new Set(['hook1', 'chat', 'fehler', 'bundestag', 'bedingung', 'r2g'
 const WHOOSH_LEAD = 10;
 const INTRO_FRAMES = INTRO_SECONDS * FPS;
 
-export const KocakTeil2: React.FC<KocakTeil2Props> = ({voiceover, musik, untertitel}) => {
+export const KocakTeil2: React.FC<KocakTeil2Props> = ({stimme, musik, untertitel}) => {
   let from = 0;
   const timeline = SHOTS.map((shot, i) => {
     const start = from;
@@ -64,11 +64,16 @@ export const KocakTeil2: React.FC<KocakTeil2Props> = ({voiceover, musik, unterti
   return (
     <AbsoluteFill style={{fontFamily: FONT, background: C.bg}}>
       <Audio src={staticFile(musik)} volume={musicVolume} />
-      {voiceover ? (
-        <Sequence from={INTRO_FRAMES} layout="none">
-          <Audio src={staticFile(voiceover)} />
-        </Sequence>
-      ) : null}
+      {stimme
+        ? VOICE_PARTS.map((part) => {
+            const shot = timeline.find((s) => s.id === part.firstShot);
+            return shot ? (
+              <Sequence key={part.file} from={shot.start} layout="none">
+                <Audio src={staticFile(part.file)} />
+              </Sequence>
+            ) : null;
+          })
+        : null}
 
       {timeline.map((shot) => {
         const Visual = VISUALS[shot.id];
