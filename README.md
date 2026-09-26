@@ -15,7 +15,8 @@ Fertig gerenderte Videos zum Herunterladen. Der Quellcode liegt auf dem Branch
 
 | Datei | Inhalt |
 |---|---|
-| `youtube/sachsen-anhalt-vorschau.mp4` | Sachsen-Anhalt nach der Wahl – Vorschau **ohne Stimme** |
+| `youtube/sachsen-anhalt.mp4` | Sachsen-Anhalt nach der Wahl – fertig, mit Stimme (7:36) |
+| `youtube/beschreibung.md` | Titel, Beschreibung, Kapitel-Zeitmarken, Quellen |
 | `youtube/thumbnail-sachsen-anhalt.png` | Thumbnail (1280×720) |
 
 Herunterladen: Datei anklicken, dann oben rechts auf „Download raw file“ (Pfeil-Symbol).
