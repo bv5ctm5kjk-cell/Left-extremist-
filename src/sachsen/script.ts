@@ -2,6 +2,7 @@
 // Jede Einstellung hat Kapitel, Hintergrund, Dauer und Sprechertext (= Untertitel).
 // Dauern sind geschätzt (ca. 2,3 Wörter/s) und werden nach der Aufnahme angepasst.
 import type {Bg, VoicePart} from '../shorts/types';
+import timing from './timing.json';
 
 export {FPS} from '../shorts/types';
 
@@ -30,12 +31,14 @@ export type LongShot = {
   text: string;
 };
 
+// Dauer: aus der Stimm-Schnittliste (timing.json), sonst geschätzt.
+const TIMING = timing as Record<string, number>;
 const s = (id: string, chapter: string, bg: Bg, text: string, seconds?: number): LongShot => ({
   id,
   chapter,
   bg,
   text,
-  seconds: seconds ?? Math.round((text.split(/\s+/).length / 2.3 + 0.4) * 10) / 10,
+  seconds: TIMING[id] ?? seconds ?? Math.round((text.split(/\s+/).length / 2.3 + 0.4) * 10) / 10,
 });
 
 export const SHOTS: LongShot[] = [
@@ -135,5 +138,9 @@ export const SHOTS: LongShot[] = [
   s('f-abo', 'fazit', 'rot', 'Schreibt es in die Kommentare – und abonniert den Kanal, damit ihr nichts verpasst.', 7),
 ];
 
-// Sprachaufnahmen: eine pro Kapitel, jeweils ab der ersten Einstellung nach der Kapitelkarte.
-export const VOICE_PARTS: VoicePart[] = [];
+// Sprachaufnahmen: eine pro Kapitel (scripts/stimme-schnitt.mjs), jeweils ab der
+// ersten Einstellung nach der Kapitelkarte.
+export const VOICE_PARTS: VoicePart[] = CHAPTERS.map((c) => ({
+  file: `sachsen/stimme-${c.id}.mp3`,
+  firstShot: SHOTS.find((sh) => sh.chapter === c.id && !sh.id.startsWith('kap-') && sh.text)!.id,
+}));
