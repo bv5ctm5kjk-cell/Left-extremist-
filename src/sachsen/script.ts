@@ -12,15 +12,20 @@ export const CHAPTERS: Chapter[] = [
   {id: 'intro', nr: 0, title: 'Intro'},
   {id: 'ergebnis', nr: 1, title: 'Das Ergebnis'},
   {id: 'vorher', nr: 2, title: 'Der Absturz der CDU'},
-  {id: 'warum', nr: 3, title: 'Warum die AfD so stark ist'},
-  {id: 'siegmund', nr: 4, title: 'Wer ist Ulrich Siegmund?'},
-  {id: 'vs', nr: 5, title: 'Was der Verfassungsschutz sagt'},
-  {id: 'aendern', nr: 6, title: 'Was eine AfD-Regierung ändern könnte'},
-  {id: 'regeln', nr: 7, title: 'Wie wird man Ministerpräsident?'},
-  {id: 'parteien', nr: 8, title: 'Wer mit wem?'},
-  {id: 'bund', nr: 9, title: 'Beben in Berlin'},
-  {id: 'szenarien', nr: 10, title: 'Wie geht es weiter?'},
-  {id: 'fazit', nr: 11, title: 'Fazit'},
+  {id: 'aufstieg', nr: 3, title: 'Der Aufstieg der AfD'},
+  {id: 'warum', nr: 4, title: 'Warum die AfD so stark ist'},
+  {id: 'siegmund', nr: 5, title: 'Wer ist Ulrich Siegmund?'},
+  {id: 'schulze', nr: 6, title: 'Wer ist Sven Schulze?'},
+  {id: 'vs', nr: 7, title: 'Was der Verfassungsschutz sagt'},
+  {id: 'aendern', nr: 8, title: 'Was eine AfD-Regierung ändern könnte'},
+  {id: 'wirtschaft', nr: 9, title: 'Was die Wirtschaft sagt'},
+  {id: 'regeln', nr: 10, title: 'Wie wird man Ministerpräsident?'},
+  {id: 'parteien', nr: 11, title: 'Wer mit wem?'},
+  {id: 'minderheit', nr: 12, title: 'Was ist eine Minderheitsregierung?'},
+  {id: 'bund', nr: 13, title: 'Beben in Berlin'},
+  {id: 'thueringen', nr: 14, title: 'Der Blick nach Thüringen'},
+  {id: 'szenarien', nr: 15, title: 'Wie geht es weiter?'},
+  {id: 'fazit', nr: 16, title: 'Fazit'},
 ];
 
 export type LongShot = {
@@ -64,6 +69,12 @@ export const SHOTS: LongShot[] = [
   s('h-wechsel', 'vorher', 'nacht', 'Im Januar 2026 trat Haseloff nach fast 15 Jahren im Amt zurück. Sein Nachfolger wurde Sven Schulze – gewählt am 28. Januar mit 58 Stimmen.'),
   s('h-absturz', 'vorher', 'alarm', 'Gut sieben Monate später hat die CDU mehr als die Hälfte ihres Stimmenanteils verloren – und die AfD ihr Ergebnis mehr als verdoppelt.'),
 
+  // Aufstieg der AfD
+  s('kap-aufstieg', 'aufstieg', 'nacht', '', 2.5),
+  s('g-2016', 'aufstieg', 'blau', 'Neu ist die AfD in Sachsen-Anhalt nicht. 2016 trat sie zum ersten Mal an – und holte mit André Poggenburg aus dem Stand 24,3 Prozent.'),
+  s('g-2021', 'aufstieg', 'grau', '2021 folgte ein Dämpfer: Unter Oliver Kirchner kam die AfD auf 20,8 Prozent. Zum ersten Mal verlor sie in einem ostdeutschen Land Stimmen.'),
+  s('g-2026', 'aufstieg', 'alarm', 'Fünf Jahre später, mit Ulrich Siegmund an der Spitze, hat sie ihr Ergebnis mehr als verdoppelt.'),
+
   // 3 Warum
   s('kap-warum', 'warum', 'nacht', '', 2.5),
   s('w-frage', 'warum', 'spot', 'Warum wählt fast jeder Zweite in Sachsen-Anhalt die AfD? Die Wahlanalysen zeichnen ein klares Bild.'),
@@ -82,6 +93,12 @@ export const SHOTS: LongShot[] = [
   s('s-programm', 'siegmund', 'rot', 'Das Programm ist es nicht: Die AfD will das Grundrecht auf Asyl abschaffen und ein eigenes Amt für sogenannte Remigration schaffen.'),
   s('s-ukraine', 'siegmund', 'grau', 'Ukrainer sollen nicht mehr als Kriegsflüchtlinge anerkannt werden. Und im Geschichtsunterricht soll das von Bismarck gegründete Kaiserreich eine größere Rolle spielen.'),
 
+  // Schulze
+  s('kap-schulze', 'schulze', 'nacht', '', 2.5),
+  s('sch-person', 'schulze', 'grau', 'Und wer ist der Mann, der jetzt geschäftsführend im Amt bleibt? Sven Schulze, 47 Jahre alt, aus Quedlinburg, studierter Ingenieur.'),
+  s('sch-karriere', 'schulze', 'nacht', 'Von 2014 bis 2021 saß er im Europaparlament, danach war er Wirtschaftsminister in Magdeburg. Seit 2021 führt er die CDU im Land, seit Januar 2026 ist er Ministerpräsident.'),
+  s('sch-lage', 'schulze', 'rot', 'Jetzt steht er vor einem Scherbenhaufen: Seine Partei hat mehr als die Hälfte ihres Stimmenanteils verloren – und er ist Ministerpräsident auf Abruf.'),
+
   // 5 Verfassungsschutz
   s('kap-vs', 'vs', 'nacht', '', 2.5),
   s('v-einstufung', 'vs', 'alarm', 'Wichtig zur Einordnung: Der Verfassungsschutz Sachsen-Anhalt stuft den AfD-Landesverband seit 2023 als gesichert rechtsextremistisch ein.'),
@@ -96,6 +113,14 @@ export const SHOTS: LongShot[] = [
   s('a-schule', 'aendern', 'grau', 'In den Schulen will die AfD die Schulpflicht lockern: Eltern sollen ihre Kinder auch zu Hause unterrichten dürfen, mit regelmäßigen Prüfungen.'),
   s('a-bundesrat', 'aendern', 'rot', 'Und im Bundesrat hätte Sachsen-Anhalt vier Stimmen – zum ersten Mal würde dort eine AfD-Regierung mitentscheiden.'),
   s('a-grenzen', 'aendern', 'nacht', 'Grenzen gibt es trotzdem: Was gegen das Grundgesetz verstößt, kann vor dem Verfassungsgericht landen.'),
+
+  // Wirtschaft
+  s('kap-wirtschaft', 'wirtschaft', 'nacht', '', 2.5),
+  s('x-warnung', 'wirtschaft', 'spot', 'Nach der Wahl haben zahlreiche Wirtschaftsverbände gewarnt. Ihr wichtigster Punkt: Fachkräfte.'),
+  s('x-programm', 'wirtschaft', 'grau', 'Laut Wahlprogramm will die AfD keine sogenannten kulturfremden Fachkräfte mehr anwerben.'),
+  s('x-handel', 'wirtschaft', 'nacht', 'Der Präsident des Handelsverbands, Alexander von Preen, warnt: Eine Politik der Abschottung und Ausgrenzung führe in die Irre.'),
+  s('x-demografie', 'wirtschaft', 'blau', 'Der Maschinenbauverband VDMA nennt das Ergebnis alarmierend. Sachsen-Anhalt hat die älteste Bevölkerung Deutschlands. In neun Jahren stehen rund zwölf Prozent weniger Menschen dem Arbeitsmarkt zur Verfügung.'),
+  s('x-arbeitslos', 'wirtschaft', 'rot', 'Dazu kommt: Die Arbeitslosenquote lag im August bei 8,2 Prozent – deutlich über dem Bundesschnitt von 6,5 Prozent.'),
 
   // 7 Regeln
   s('kap-regeln', 'regeln', 'nacht', '', 2.5),
@@ -116,11 +141,27 @@ export const SHOTS: LongShot[] = [
   s('p-bedingung', 'parteien', 'nacht', 'Eine Koalition lehnt das BSW aber ab – und einen Ministerpräsidenten Siegmund will es bisher nicht mitwählen. Das BSW wünscht sich einen parteilosen Kandidaten.'),
   s('p-tolerierung', 'parteien', 'alarm', 'Die AfD dagegen will den Regierungschef selbst stellen. Denkbar wäre am Ende auch eine AfD-Minderheitsregierung, die das BSW toleriert. Zusammen hätten beide 44 Sitze.'),
 
+  // Minderheitsregierung
+  s('kap-minderheit', 'minderheit', 'nacht', '', 2.5),
+  s('m-def', 'minderheit', 'spot', 'Ein Begriff fällt gerade ständig: Minderheitsregierung. Das heißt: Ein Ministerpräsident wird gewählt, obwohl die Parteien hinter ihm keine eigene Mehrheit im Landtag haben.'),
+  s('m-tolerierung', 'minderheit', 'grau', 'Tolerieren bedeutet: Eine Partei sitzt nicht in der Regierung, sichert ihr aber bei wichtigen Abstimmungen Stimmen zu – meist gegen inhaltliche Zugeständnisse.'),
+  s('m-rechnung', 'minderheit', 'blau', 'Für jedes Gesetz und für den Haushalt bräuchte eine AfD-Regierung mindestens drei zusätzliche Stimmen aus anderen Fraktionen. Denn 39 plus 3 ergibt 42.'),
+  s('m-hoeppner', 'minderheit', 'rot', 'Neu ist das in Sachsen-Anhalt nicht. Von 1994 bis 2002 regierte Reinhard Höppner von der SPD ohne eigene Mehrheit – toleriert von der PDS. Das wurde als Magdeburger Modell bekannt.'),
+  s('m-sachsen', 'minderheit', 'nacht', 'Und im Nachbarland Sachsen regiert Michael Kretschmer von der CDU derzeit mit einer Koalition ohne eigene Mehrheit.'),
+
   // 9 Bund
   s('kap-bund', 'bund', 'nacht', '', 2.5),
   s('b-merz', 'bund', 'grau', 'Die Wahl erschüttert auch Berlin. Für CDU-Chef und Kanzler Friedrich Merz ist das Ergebnis ein Schlag. Er hält an der Brandmauer fest und schließt jede Zusammenarbeit mit der AfD aus.'),
   s('b-soeder', 'bund', 'blau', 'CSU-Chef Markus Söder lehnt eine Debatte über die Brandmauer ebenfalls ab. Er nennt das Ergebnis eine Antiwahl – die größte Ablehnung, die man in den letzten 50 Jahren gesehen habe.'),
   s('b-debatte', 'bund', 'rot', 'Trotzdem ist die Frage in der Union offen: Wie umgehen mit einer Partei, die in Teilen Ostdeutschlands fast die Hälfte der Wähler hinter sich hat?'),
+
+  // Thüringen
+  s('kap-thueringen', 'thueringen', 'nacht', '', 2.5),
+  s('t-2020', 'thueringen', 'grau', 'Wie heikel das alles ist, zeigt ein Blick nach Thüringen. 2020 wurde dort der FDP-Politiker Thomas Kemmerich zum Ministerpräsidenten gewählt – mit den Stimmen von CDU, FDP und AfD.'),
+  s('t-ruecktritt', 'thueringen', 'alarm', 'Die Folge war eine Staatskrise. Nach nur drei Tagen trat Kemmerich zurück.'),
+  s('t-2024', 'thueringen', 'blau', '2024 wurde die AfD auch in Thüringen stärkste Kraft, mit 32,8 Prozent. Regieren konnte sie trotzdem nicht: CDU, BSW und SPD bildeten die sogenannte Brombeer-Koalition.'),
+  s('t-heute', 'thueringen', 'nacht', 'Inzwischen ist die BSW-Spitze in Thüringen aus der Partei ausgetreten. Die Koalition ist geschwächt und sucht Mehrheiten mit der Linken.'),
+  s('t-lehre', 'thueringen', 'rot', 'Das zeigt: Mehrheiten ohne die AfD sind möglich – aber sie sind zerbrechlich.'),
 
   // 10 Szenarien
   s('kap-szenarien', 'szenarien', 'nacht', '', 2.5),
@@ -140,7 +181,8 @@ export const SHOTS: LongShot[] = [
 
 // Sprachaufnahmen: eine pro Kapitel (scripts/stimme-schnitt.mjs), jeweils ab der
 // ersten Einstellung nach der Kapitelkarte.
+// Nur Kapitel, die schon aufgenommen sind (Einstellung steht in timing.json).
 export const VOICE_PARTS: VoicePart[] = CHAPTERS.map((c) => ({
   file: `sachsen/stimme-${c.id}.mp3`,
   firstShot: SHOTS.find((sh) => sh.chapter === c.id && !sh.id.startsWith('kap-') && sh.text)!.id,
-}));
+})).filter((v) => v.firstShot in TIMING);

@@ -1,6 +1,6 @@
 # Skript: „Sachsen-Anhalt nach der Wahl“ (YouTube, 16:9)
 
-Ca. 9.2 Minuten, 1137 Wörter. Eine Aufnahme pro Kapitel.
+Ca. 11.1 Minuten, 1570 Wörter. Eine Aufnahme pro Kapitel.
 
 ## 🎙️ Aufnahme 1 – Intro
 
@@ -34,7 +34,15 @@ Im Januar 2026 trat Haseloff nach fast 15 Jahren im Amt zurück. Sein Nachfolger
 
 Gut sieben Monate später hat die CDU mehr als die Hälfte ihres Stimmenanteils verloren – und die AfD ihr Ergebnis mehr als verdoppelt.
 
-## 🎙️ Aufnahme 4 – Kapitel 3: Warum die AfD so stark ist
+## 🎙️ Aufnahme 4 – Kapitel 3: Der Aufstieg der AfD
+
+Neu ist die AfD in Sachsen-Anhalt nicht. 2016 trat sie zum ersten Mal an – und holte mit André Poggenburg aus dem Stand 24,3 Prozent.
+
+2021 folgte ein Dämpfer: Unter Oliver Kirchner kam die AfD auf 20,8 Prozent. Zum ersten Mal verlor sie in einem ostdeutschen Land Stimmen.
+
+Fünf Jahre später, mit Ulrich Siegmund an der Spitze, hat sie ihr Ergebnis mehr als verdoppelt.
+
+## 🎙️ Aufnahme 5 – Kapitel 4: Warum die AfD so stark ist
 
 Warum wählt fast jeder Zweite in Sachsen-Anhalt die AfD? Die Wahlanalysen zeichnen ein klares Bild.
 
@@ -48,7 +56,7 @@ Die CDU hat laut Infratest dimap rund 82.000 Wähler direkt an die AfD verloren.
 
 Und viele machen sie für die Unzufriedenheit mit der Bundesregierung verantwortlich: 86 Prozent werfen der CDU vor, ihre Wahlversprechen nicht gehalten zu haben.
 
-## 🎙️ Aufnahme 5 – Kapitel 4: Wer ist Ulrich Siegmund?
+## 🎙️ Aufnahme 6 – Kapitel 5: Wer ist Ulrich Siegmund?
 
 Das Gesicht dieses Erfolgs: Ulrich Siegmund. 35 Jahre alt, aus Tangermünde, gelernter Groß- und Außenhandelskaufmann.
 
@@ -62,7 +70,15 @@ Das Programm ist es nicht: Die AfD will das Grundrecht auf Asyl abschaffen und e
 
 Ukrainer sollen nicht mehr als Kriegsflüchtlinge anerkannt werden. Und im Geschichtsunterricht soll das von Bismarck gegründete Kaiserreich eine größere Rolle spielen.
 
-## 🎙️ Aufnahme 6 – Kapitel 5: Was der Verfassungsschutz sagt
+## 🎙️ Aufnahme 7 – Kapitel 6: Wer ist Sven Schulze?
+
+Und wer ist der Mann, der jetzt geschäftsführend im Amt bleibt? Sven Schulze, 47 Jahre alt, aus Quedlinburg, studierter Ingenieur.
+
+Von 2014 bis 2021 saß er im Europaparlament, danach war er Wirtschaftsminister in Magdeburg. Seit 2021 führt er die CDU im Land, seit Januar 2026 ist er Ministerpräsident.
+
+Jetzt steht er vor einem Scherbenhaufen: Seine Partei hat mehr als die Hälfte ihres Stimmenanteils verloren – und er ist Ministerpräsident auf Abruf.
+
+## 🎙️ Aufnahme 8 – Kapitel 7: Was der Verfassungsschutz sagt
 
 Wichtig zur Einordnung: Der Verfassungsschutz Sachsen-Anhalt stuft den AfD-Landesverband seit 2023 als gesichert rechtsextremistisch ein.
 
@@ -70,7 +86,7 @@ Begründung unter anderem: Das Programm sei von einem ethnischen Volksbegriff ge
 
 Die AfD hält die Einstufung für rechtswidrig und wehrt sich juristisch. Das Verfahren ruht, bis über die Einstufung der Bundespartei entschieden ist.
 
-## 🎙️ Aufnahme 7 – Kapitel 6: Was eine AfD-Regierung ändern könnte
+## 🎙️ Aufnahme 9 – Kapitel 8: Was eine AfD-Regierung ändern könnte
 
 Was könnte eine AfD-Landesregierung überhaupt entscheiden? Mehr, als viele denken.
 
@@ -84,7 +100,19 @@ Und im Bundesrat hätte Sachsen-Anhalt vier Stimmen – zum ersten Mal würde do
 
 Grenzen gibt es trotzdem: Was gegen das Grundgesetz verstößt, kann vor dem Verfassungsgericht landen.
 
-## 🎙️ Aufnahme 8 – Kapitel 7: Wie wird man Ministerpräsident?
+## 🎙️ Aufnahme 10 – Kapitel 9: Was die Wirtschaft sagt
+
+Nach der Wahl haben zahlreiche Wirtschaftsverbände gewarnt. Ihr wichtigster Punkt: Fachkräfte.
+
+Laut Wahlprogramm will die AfD keine sogenannten kulturfremden Fachkräfte mehr anwerben.
+
+Der Präsident des Handelsverbands, Alexander von Preen, warnt: Eine Politik der Abschottung und Ausgrenzung führe in die Irre.
+
+Der Maschinenbauverband VDMA nennt das Ergebnis alarmierend. Sachsen-Anhalt hat die älteste Bevölkerung Deutschlands. In neun Jahren stehen rund zwölf Prozent weniger Menschen dem Arbeitsmarkt zur Verfügung.
+
+Dazu kommt: Die Arbeitslosenquote lag im August bei 8,2 Prozent – deutlich über dem Bundesschnitt von 6,5 Prozent.
+
+## 🎙️ Aufnahme 11 – Kapitel 10: Wie wird man Ministerpräsident?
 
 Und jetzt? Wie kommt Sachsen-Anhalt zu einer Regierung? Die Landesverfassung regelt das in Artikel 65.
 
@@ -98,7 +126,7 @@ Und eine Frist gibt es nicht. Die Verfassung schreibt nicht vor, bis wann ein Mi
 
 So lange bleibt Sven Schulze von der CDU geschäftsführend im Amt. Und eine Neuwahl ginge nur, wenn sich der Landtag mit Zwei-Drittel-Mehrheit selbst auflöst.
 
-## 🎙️ Aufnahme 9 – Kapitel 8: Wer mit wem?
+## 🎙️ Aufnahme 12 – Kapitel 11: Wer mit wem?
 
 Wer spricht mit wem? Die CDU hat entschieden: Sie geht in die Opposition. Eine Einladung der SPD zu Gesprächen über eine Regierung ohne AfD hat sie abgelehnt.
 
@@ -114,7 +142,19 @@ Eine Koalition lehnt das BSW aber ab – und einen Ministerpräsidenten Siegmund
 
 Die AfD dagegen will den Regierungschef selbst stellen. Denkbar wäre am Ende auch eine AfD-Minderheitsregierung, die das BSW toleriert. Zusammen hätten beide 44 Sitze.
 
-## 🎙️ Aufnahme 10 – Kapitel 9: Beben in Berlin
+## 🎙️ Aufnahme 13 – Kapitel 12: Was ist eine Minderheitsregierung?
+
+Ein Begriff fällt gerade ständig: Minderheitsregierung. Das heißt: Ein Ministerpräsident wird gewählt, obwohl die Parteien hinter ihm keine eigene Mehrheit im Landtag haben.
+
+Tolerieren bedeutet: Eine Partei sitzt nicht in der Regierung, sichert ihr aber bei wichtigen Abstimmungen Stimmen zu – meist gegen inhaltliche Zugeständnisse.
+
+Für jedes Gesetz und für den Haushalt bräuchte eine AfD-Regierung mindestens drei zusätzliche Stimmen aus anderen Fraktionen. Denn 39 plus 3 ergibt 42.
+
+Neu ist das in Sachsen-Anhalt nicht. Von 1994 bis 2002 regierte Reinhard Höppner von der SPD ohne eigene Mehrheit – toleriert von der PDS. Das wurde als Magdeburger Modell bekannt.
+
+Und im Nachbarland Sachsen regiert Michael Kretschmer von der CDU derzeit mit einer Koalition ohne eigene Mehrheit.
+
+## 🎙️ Aufnahme 14 – Kapitel 13: Beben in Berlin
 
 Die Wahl erschüttert auch Berlin. Für CDU-Chef und Kanzler Friedrich Merz ist das Ergebnis ein Schlag. Er hält an der Brandmauer fest und schließt jede Zusammenarbeit mit der AfD aus.
 
@@ -122,7 +162,19 @@ CSU-Chef Markus Söder lehnt eine Debatte über die Brandmauer ebenfalls ab. Er 
 
 Trotzdem ist die Frage in der Union offen: Wie umgehen mit einer Partei, die in Teilen Ostdeutschlands fast die Hälfte der Wähler hinter sich hat?
 
-## 🎙️ Aufnahme 11 – Kapitel 10: Wie geht es weiter?
+## 🎙️ Aufnahme 15 – Kapitel 14: Der Blick nach Thüringen
+
+Wie heikel das alles ist, zeigt ein Blick nach Thüringen. 2020 wurde dort der FDP-Politiker Thomas Kemmerich zum Ministerpräsidenten gewählt – mit den Stimmen von CDU, FDP und AfD.
+
+Die Folge war eine Staatskrise. Nach nur drei Tagen trat Kemmerich zurück.
+
+2024 wurde die AfD auch in Thüringen stärkste Kraft, mit 32,8 Prozent. Regieren konnte sie trotzdem nicht: CDU, BSW und SPD bildeten die sogenannte Brombeer-Koalition.
+
+Inzwischen ist die BSW-Spitze in Thüringen aus der Partei ausgetreten. Die Koalition ist geschwächt und sucht Mehrheiten mit der Linken.
+
+Das zeigt: Mehrheiten ohne die AfD sind möglich – aber sie sind zerbrechlich.
+
+## 🎙️ Aufnahme 16 – Kapitel 15: Wie geht es weiter?
 
 Am 6. Oktober kommt der neue Landtag zum ersten Mal zusammen. Eröffnen wird die Sitzung ausgerechnet Linken-Fraktionschefin Eva von Angern – als Alterspräsidentin.
 
@@ -134,7 +186,7 @@ Zweitens: eine AfD-Minderheitsregierung, die das BSW toleriert.
 
 Drittens: eine lange Hängepartie mit einer geschäftsführenden Regierung Schulze.
 
-## 🎙️ Aufnahme 12 – Kapitel 11: Fazit
+## 🎙️ Aufnahme 17 – Kapitel 16: Fazit
 
 Sachsen-Anhalt steht vor einer Entscheidung, die es so noch nie gab: Zum ersten Mal könnte die AfD ein Bundesland regieren.
 
